@@ -4,20 +4,6 @@ Un clon del clásico juego **Buscaminas** implementado con **React**, **TypeScri
 
 ---
 
-## 📂 Estructura del proyecto
-
-src/
-├─ components/
-│ ├─ Board.tsx # Componente que renderiza el tablero
-│ ├─ Cell.tsx # Componente que renderiza una celda individual
-│ └─ Controls.tsx # Controles para cambiar filas, columnas, minas y resetear el juego
-├─ utils/
-│ └─ board.ts # Funciones para generar tablero, revelar celdas, alternar banderas y verificar victoria
-├─ types.ts # Definición del tipo Cell
-└─ App.tsx # Componente principal que maneja estado, timer y lógica del juego
-
----
-
 ## ⚙️ Funcionalidades
 
 - **Tablero personalizable:** Cambia filas, columnas y número de minas.  
@@ -29,20 +15,6 @@ src/
 - **Mejor tiempo:** Almacena en `localStorage` el mejor tiempo para cada configuración de tablero.  
 
 ---
-
-## 🧩 Tipos principales
-
-```ts
-type Cell = {
-  id: string;
-  row: number;
-  col: number;
-  isMine: boolean;
-  adjacentMines: number;
-  state: "hidden" | "revealed" | "flagged";
-};
-
-type Status = "idle" | "playing" | "won" | "lost";
 
 📝 Uso
 
